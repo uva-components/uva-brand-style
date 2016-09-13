@@ -1,7 +1,7 @@
 {
   "name": "uva-brand-style",
   "description": "Common UVA brand styles",
-  "main": "uva-brand-style.html",
+  "main": "uva-theme.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^1.4.0"
   },
