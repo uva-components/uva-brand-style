@@ -1,12 +1,12 @@
 {
-  "name": "uva-brand-style",
+  "name": "uva-theme",
   "description": "Common UVA brand styles",
   "main": "uva-theme.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.4.0"
+    "polymer": "Polymer/polymer#^1.8.0"
   },
   "devDependencies": {
-    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.24",
     "iron-elements": "PolymerElements/iron-elements#^1.0.10"
   }
 }
