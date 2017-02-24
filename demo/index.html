@@ -18,7 +18,8 @@
   <body>
 
     <div class="vertical-section-container centered" style="max-width: 800px">
-      <h3>Basic uva-brand-style Color Demo</h3>
+      <h2><a href="">Web Color Palettes</a></h2>
+      <h3>Primary Web Color Palette</h3>
       <demo-snippet>
         <template>
           <style is="custom-style">
@@ -30,21 +31,34 @@
             .orange {background-color: var(--color-primary-orange);}
             .blue {background-color: var(--color-primary-blue);}
             .white {background-color: var(--color-white); color: var(--color-text-gray) !important;}
+          </style>
+          <div class="palette">
+            <div class="orange">Primary Orange</div>
+            <div class="blue">Primary Blue</div>
+            <div class="white">White</div>
+          </div>
+        </template>
+      </demo-snippet>
+
+      <h3>Secondary Web Color Palette</h3>
+      <demo-snippet>
+        <template>
+          <style is="custom-style">
+            div.palette {
+              @apply(--layout-horizontal);
+              @apply(--layout-wrap);
+            }
+            div.palette div {width: 200px; height: 200px; color: var(--color-white);}
             .orange-2 {background-color: var(--color-secondary-orange);}
             .blue-2 {background-color: var(--color-secondary-blue);}
-            .lt-blue {background-color: var(--color-light-blue);}
             .lt-gry {background-color: var(--color-light-gray); color: var(--color-text-gray) !important;}
             .md-gry {background-color: var(--color-medium-gray);}
             .txt-gry {background-color: var(--color-text-gray);}
             .emg-red {background-color: var(--color-emergency-red);}
           </style>
           <div class="palette">
-            <div class="orange">Primary Orange</div>
-            <div class="blue">Primary Blue</div>
-            <div class="white">White</div>
             <div class="orange-2">Secondary Orange</div>
             <div class="blue-2">Secondary Blue</div>
-            <div class="lt-blue">Light Blue</div>
             <div class="lt-gry">Light Gray</div>
             <div class="md-gry">Medium Gray</div>
             <div class="txt-gry">Text Gray</div>
@@ -53,24 +67,74 @@
         </template>
       </demo-snippet>
 
-      <h3>Basic uva-brand-style Font Demo</h3>
+      <h2><a href="http://brand.virginia.edu/bp/#/brandguidelines/151/section/8536">Web Fonts</a></h2>
+      <h3>Primary Web Fonts</h3>
+
       <demo-snippet>
         <template>
           <style is="custom-style">
+            .font-show {
+              @apply(--layout-horizontal);
+              @apply(--layout-around-justified);
+            }
             .primary {font-family: var(--font-primary);}
+            .primary-condensed {font-family: var(--font-primary-condensed);}
+            .primary-compressed {font-family: var(--font-primary-compressed);}
+            .primary-extra-compressed {font-family: var(--font-primary-extra-compressed);}
+            .italic {font-style: italic;}
             .book {font-weight: var(--font-weight-book);}
             .medium {font-weight: var(--font-weight-medium);}
             .demi {font-weight: var(--font-weight-demi);}
             .heavy {font-weight: var(--font-weight-heavy);}
           </style>
-          <h4>Primary Font</h4>
-            <div class="primary">
+          <h4>Franklin Gothic</h4>
+          <div class="font-show primary">
+            <div>
                <div class="book">Primary Book</div>
                <div class="medium">Primary Medium</div>
                <div class="demi">Primary Demi</div>
                <div class="heavy">Primary Heavy</div>
             </div>
-            <div class="group"></div>
+            <div class="italic">
+              <div class="book">Primary Book Italic</div>
+              <div class="medium">Primary Medium Italic</div>
+              <div class="demi">Primary Demi Italic</div>
+              <div class="heavy">Primary Heavy Italic</div>
+            </div>
+          </div>
+          <h4>Franklin Gothic Condensed</h4>
+          <div class="font-show primary-condensed">
+            <div>
+               <div class="book">Primary Condensed Book</div>
+               <div class="demi">Primary Condensed Demi</div>
+            </div>
+            <div class="italic">
+              <div class="book">Primary Condensed Book Italic</div>
+              <div class="demi">Primary Condensed Demi Italic</div>
+            </div>
+          </div>
+          <h4>Franklin Gothic Compressed</h4>
+          <div class="font-show primary-compressed">
+            <div>
+               <div class="book">Primary Compressed Book</div>
+               <div class="demi">Primary Compressed Demi</div>
+            </div>
+            <div class="italic">
+              <div class="book">Primary Compressed Book Italic</div>
+              <div class="demi">Primary Compressed Demi Italic</div>
+            </div>
+          </div>
+          <h4>Franklin Gothic Extra Compressed</h4>
+          <div class="font-show primary-extra-compressed">
+            <div>
+               <div class="book">Primary Extra Compressed Book</div>
+               <div class="demi">Primary Extra Compressed Demi</div>
+            </div>
+            <div class="italic">
+              <div class="book">Primary Extra Compressed Book Italic</div>
+              <div class="demi">Primary Extra Compressed Demi Italic</div>
+            </div>
+          </div>
         </template>
       </demo-snippet>
 
