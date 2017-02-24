@@ -13,6 +13,10 @@
     <link rel="import" href="../uva-theme.html">
 
     <style is="custom-style" include="demo-pages-shared-styles uva-theme">
+      [hide-code] {
+        --demo-snippet-code: {display: none;};
+        paper-icon-button: {display:none;}
+      }
     </style>
   </head>
   <body>
@@ -138,25 +142,46 @@
         </template>
       </demo-snippet>
 
-      <h3>Basic uva-brand-style Style Mixin Demo</h3>
+      <h3>Secondary Web Fonts</h3>
+
+      <demo-snippet>
+        <template>
+          <style is="custom-style">
+            .secondary {font-family: var(--font-secondary);}
+            .italic {font-style: italic;}
+            .heavy {font-weight: var(--font-weight-heavy);}
+          </style>
+          <h4>Bodoni</h4>
+          <div class="secondary heavy italic">Secondary Heavy Italic</div>
+        </template>
+      </demo-snippet>
+
+      <h2><a href="http://brand.virginia.edu/bp/#/brandguidelines/151/section/9315">Font Styles and Hierarchy</a></h2>
+      <h3>Typographic pattern example</h3>
       <demo-snippet>
         <template>
           <h1>H1 Page Title</h1>
           <h2>H2 Section Header</h2>
           <p>Body copy Lorem ipsum dolor sit amet, iusto efficiantur te has, cu mea invenire reformidans, erant delectus laboramus duo no. Sea ei feugait voluptatibus. Eu sit illud dicta delenit. Luptatum urbanitas cum an, per ne paulo petentium.</p>
+
           <h3>h3 ALT Header</h3>
+
           <h4>H4 List Headline</h4>
           <p>Body copy Lorem ipsum dolor sit amet, iusto efficiantur te has, cu mea invenire reformidans, erant delectus laboramus duo no. Sea ei feugait voluptatibus. Eu sit illud dicta delenit. Luptatum urbanitas cum an, per ne paulo petentium.</p>
+
           <h4>H4 List Headline</h4>
           <p>Body copy Lorem ipsum dolor sit amet, iusto efficiantur te has, cu mea invenire reformidans, erant delectus laboramus duo no. Sea ei feugait voluptatibus. Eu sit illud dicta delenit. Luptatum urbanitas cum an, per ne paulo petentium.</p>
+
           <blockquote>
             <p>"Quote lorem ipsum dolor site amet."</p>
             <h5>- H5 Source '17</h5>
           </blockquote>
+
           <ul>
             <li>Bullet list lorem ipsum
             <li>Bullet list lorem ipsum dolor sit amet, consectetur adipiscing elit, sed elit, sed do eiusmod tempor in doeiusmod
           </ul>
+
           <ol>
             <li>Numbered list 1
             <li>Numbered list 2
