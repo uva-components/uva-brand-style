@@ -2,7 +2,7 @@
 
 Common UVA brand styles
 
-_[Demo](https://uva-components.github.io/uva-brand-style/components/uva-brand-style/demo/)_
+_[Demo](https://uva-components.github.io/uva-theme/components/uva-theme/demo/)_
 
 ## Install the Polymer-CLI
 
