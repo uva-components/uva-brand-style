@@ -12,12 +12,14 @@
 
     <link rel="import" href="../uva-theme.html">
 
-    <style is="custom-style" include="demo-pages-shared-styles uva-theme">
-      [hide-code] {
-        --demo-snippet-code: {display: none;};
-        paper-icon-button: {display:none;}
-      }
-    </style>
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles uva-theme">
+        [hide-code] {
+          --demo-snippet-code: {display: none;};
+          paper-icon-button: {display:none;}
+        }
+      </style>
+    </custom-style>
   </head>
   <body>
 
@@ -26,16 +28,18 @@
       <h3>Primary Web Color Palette</h3>
       <demo-snippet>
         <template>
-          <style is="custom-style">
-            div.palette {
-              @apply(--layout-horizontal);
-              @apply(--layout-wrap);
-            }
-            div.palette div {width: 200px; height: 200px; color: var(--color-white);}
-            .orange {background-color: var(--color-primary-orange);}
-            .blue {background-color: var(--color-primary-blue);}
-            .white {background-color: var(--color-white); color: var(--color-text-gray) !important;}
-          </style>
+          <custom-style>
+            <style is="custom-style">
+              div.palette {
+                @apply(--layout-horizontal);
+                @apply(--layout-wrap);
+              }
+              div.palette div {width: 200px; height: 200px; color: var(--color-white);}
+              .orange {background-color: var(--color-primary-orange);}
+              .blue {background-color: var(--color-primary-blue);}
+              .white {background-color: var(--color-white); color: var(--color-text-gray) !important;}
+            </style>
+          </custom-style>
           <div class="palette">
             <div class="orange">Primary Orange</div>
             <div class="blue">Primary Blue</div>
@@ -47,19 +51,21 @@
       <h3>Secondary Web Color Palette</h3>
       <demo-snippet>
         <template>
-          <style is="custom-style">
-            div.palette {
-              @apply(--layout-horizontal);
-              @apply(--layout-wrap);
-            }
-            div.palette div {width: 200px; height: 200px; color: var(--color-white);}
-            .orange-2 {background-color: var(--color-secondary-orange);}
-            .blue-2 {background-color: var(--color-secondary-blue);}
-            .lt-gry {background-color: var(--color-light-gray); color: var(--color-text-gray) !important;}
-            .md-gry {background-color: var(--color-medium-gray);}
-            .txt-gry {background-color: var(--color-text-gray);}
-            .emg-red {background-color: var(--color-emergency-red);}
-          </style>
+          <custom-style>
+            <style is="custom-style">
+              div.palette {
+                @apply(--layout-horizontal);
+                @apply(--layout-wrap);
+              }
+              div.palette div {width: 200px; height: 200px; color: var(--color-white);}
+              .orange-2 {background-color: var(--color-secondary-orange);}
+              .blue-2 {background-color: var(--color-secondary-blue);}
+              .lt-gry {background-color: var(--color-light-gray); color: var(--color-text-gray) !important;}
+              .md-gry {background-color: var(--color-medium-gray);}
+              .txt-gry {background-color: var(--color-text-gray);}
+              .emg-red {background-color: var(--color-emergency-red);}
+            </style>
+          </custom-style>
           <div class="palette">
             <div class="orange-2">Secondary Orange</div>
             <div class="blue-2">Secondary Blue</div>
@@ -76,21 +82,23 @@
 
       <demo-snippet>
         <template>
-          <style is="custom-style">
-            .font-show {
-              @apply(--layout-horizontal);
-              @apply(--layout-around-justified);
-            }
-            .primary {font-family: var(--font-primary);}
-            .primary-condensed {font-family: var(--font-primary-condensed);}
-            .primary-compressed {font-family: var(--font-primary-compressed);}
-            .primary-extra-compressed {font-family: var(--font-primary-extra-compressed);}
-            .italic {font-style: italic;}
-            .book {font-weight: var(--font-weight-book);}
-            .medium {font-weight: var(--font-weight-medium);}
-            .demi {font-weight: var(--font-weight-demi);}
-            .heavy {font-weight: var(--font-weight-heavy);}
-          </style>
+          <custom-style>
+            <style is="custom-style">
+              .font-show {
+                @apply(--layout-horizontal);
+                @apply(--layout-around-justified);
+              }
+              .primary {font-family: var(--font-primary);}
+              .primary-condensed {font-family: var(--font-primary-condensed);}
+              .primary-compressed {font-family: var(--font-primary-compressed);}
+              .primary-extra-compressed {font-family: var(--font-primary-extra-compressed);}
+              .italic {font-style: italic;}
+              .book {font-weight: var(--font-weight-book);}
+              .medium {font-weight: var(--font-weight-medium);}
+              .demi {font-weight: var(--font-weight-demi);}
+              .heavy {font-weight: var(--font-weight-heavy);}
+            </style>
+          </custom-style>
           <h4>Franklin Gothic</h4>
           <div class="font-show primary">
             <div>
@@ -146,11 +154,13 @@
 
       <demo-snippet>
         <template>
-          <style is="custom-style">
-            .secondary {font-family: var(--font-secondary);}
-            .italic {font-style: italic;}
-            .heavy {font-weight: var(--font-weight-heavy);}
-          </style>
+          <custom-style>
+            <style is="custom-style">
+              .secondary {font-family: var(--font-secondary);}
+              .italic {font-style: italic;}
+              .heavy {font-weight: var(--font-weight-heavy);}
+            </style>
+          </custom-style>
           <h4>Bodoni</h4>
           <div class="secondary heavy italic">Secondary Heavy Italic</div>
         </template>
