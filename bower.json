@@ -3,6 +3,10 @@
   "description": "Common UVA brand styles",
   "main": "uva-theme.html",
   "dependencies": {
-    "uvalib-elements": "uvalib-components/uvalib-elements#master" 
+    "uva-elements": "uva-components/uva-elements#master"
+  },
+  "resolutions": {
+    "webcomponentsjs": "^v1.0.2",
+    "polymer": "^2.1.1"
   }
 }

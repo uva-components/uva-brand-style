@@ -1,6 +1,6 @@
-# \<uva-brand-style\>
+# \<uva-theme\>
 
-Common UVA brand styles
+Common UVA styles
 
 _[Demo](https://uva-components.github.io/uva-theme/components/uva-theme/demo/)_
 
