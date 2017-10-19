@@ -10,6 +10,7 @@
     <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
     <link rel="import" href="../../iron-flex-layout/iron-flex-layout.html">
 
+    <link rel="import" href="../typekit.html">
     <link rel="import" href="../uva-theme.html">
 
     <custom-style>
@@ -31,8 +32,8 @@
           <custom-style>
             <style is="custom-style">
               div.palette {
-                @apply(--layout-horizontal);
-                @apply(--layout-wrap);
+                @apply --layout-horizontal;
+                @apply --layout-wrap;
               }
               div.palette div {width: 200px; height: 200px; color: var(--color-white);}
               .orange {background-color: var(--color-primary-orange);}
@@ -54,8 +55,8 @@
           <custom-style>
             <style is="custom-style">
               div.palette {
-                @apply(--layout-horizontal);
-                @apply(--layout-wrap);
+                @apply --layout-horizontal;
+                @apply --layout-wrap;
               }
               div.palette div {width: 200px; height: 200px; color: var(--color-white);}
               .orange-2 {background-color: var(--color-secondary-orange);}
@@ -85,8 +86,8 @@
           <custom-style>
             <style is="custom-style">
               .font-show {
-                @apply(--layout-horizontal);
-                @apply(--layout-around-justified);
+                @apply --layout-horizontal;
+                @apply --layout-around-justified;
               }
               .primary {font-family: var(--font-primary);}
               .primary-condensed {font-family: var(--font-primary-condensed);}
@@ -96,7 +97,7 @@
               .book {font-weight: var(--font-weight-book);}
               .medium {font-weight: var(--font-weight-medium);}
               .demi {font-weight: var(--font-weight-demi);}
-              .heavy {font-weight: var(--font-weight-heavy);}
+              .heavy {font-weight: var(--font-weight-heavy) !important;}
             </style>
           </custom-style>
           <h4>Franklin Gothic</h4>
